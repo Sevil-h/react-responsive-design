@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Woman from "../img/woman.png";
+import AnimatedShape from "./AnimatedShape";
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -63,6 +64,7 @@ const ContactText = styled.span`
 `;
 
 const Image = styled.img`
+  margin-top: 50px;
   width: 100%;
   height: 100%;
 `;
@@ -87,6 +89,7 @@ function Intro() {
       <Right>
         <Image src={Woman}></Image>
       </Right>
+      <AnimatedShape />
     </Container>
   );
 }
