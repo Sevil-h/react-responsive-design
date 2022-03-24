@@ -1,8 +1,19 @@
+import React from "react";
+import styled from "styled-components";
+import Navbar from "./components/Navbar";
+import Intro from "./components/Intro";
+
+const Container = styled.div`
+  height: 100vh;
+  overflow: hidden;
+`;
+
 function App() {
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
+    <Container>
+      <Navbar />
+      <Intro />
+    </Container>
   );
 }
 
